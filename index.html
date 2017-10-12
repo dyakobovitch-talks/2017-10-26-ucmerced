@@ -264,15 +264,52 @@ eventbrite: "38469364906"           # optional: alphanumeric key for Eventbrite 
 -->
 <h2 id="syllabus">Syllabus</h2>
 
-{% if page.carpentry == "swc" %}
-  {% include sc/syllabus.html %}
-{% elsif page.carpentry == "dc" %}
-  {% include dc/syllabus.html %}
-{% elsif page.carpentry == "lc" %}
-  {% include lc/syllabys.html %}
-{% endif %}
-
-<hr/>
+<div class="row">
+  <div class="col-md-6">
+    <h3 id="syllabus-shell">Data Organization with Spreadsheets</h3>
+    <ul>
+      <li>Formatting data tables in Spreadsheets</li>
+      <li>Formatting problems</li>
+      <li>Dates as data</li>
+      <li>Quality control</li>
+      <li>Exporting data</li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <h3 id="syllabus-r">Data Cleaning with OpenRefine</h3>
+    <ul>
+      <li>Working with OpenRefine</li>
+      <li>Filtering and Sorting with OpenRefine</li>
+      <li>Examining Numbers in OpenRefine</li>
+      <li>Scripts from OpenRefine</li>
+      <li>Exporting and Saving Data from OpenRefine</li>
+      <li>Other Resources in OpenRefine</li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <h3 id="syllabus-git">Data Analysis and Visualization in Python</h3>
+    <ul>
+      <li>Starting with Data</li>
+      <li>Indexing, Slicing, and Subsetting DataFrames in Python </li>
+      <li>Data Types and Formats</li>
+      <li>Combining DataFrames with <code>pandas</code></li>
+      <li>Data workflows and automation</li>
+      <li>Making Plots with <code>ggplot</code></li>
+      <li>Data Ingest & Visualization - Matplotlib & Pandas</li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+	  <h3 id="syllabus-r">Data Management with SQL</h3>
+    <ul>
+      <li>Databases using SQL</li>
+      <li>Basic Queries</li>
+      <li>SQL Aggregation</li>
+      <li>Joins and aliases</li>
+    </ul>
+  </div>
+</div>
 
 <!--
   SETUP
